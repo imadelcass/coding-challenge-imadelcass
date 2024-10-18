@@ -12,6 +12,8 @@ import 'element-plus/dist/index.css'
 import App from './App.vue'
 import router from './router'
 
+VxeUI.setLanguage('en-US')
+
 const app = createApp(App)
 
 app.use(ElementPlus)
