@@ -11,9 +11,14 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "axios": "^1.7.7",
+    "element-plus": "^2.8.5",
+    "frontend-vue": "file:",
     "pinia": "^2.2.4",
     "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "vxe-pc-ui": "^4.2.23",
+    "vxe-table": "^4.7.91"
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",
@@ -22,6 +27,8 @@
     "eslint": "^9.12.0",
     "eslint-plugin-vue": "^9.29.0",
     "prettier": "^3.3.3",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
     "vite": "^5.4.8"
   }
 }
