@@ -20,7 +20,8 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         $products = QueryBuilder::for(Product::class)
-            ->allowedFilters(['name', 'categories.name', 'price'])
+            ->with('categories:id,name')
+            ->allowedFilters(['name', 'categories.id', 'price'])
             ->allowedSorts(['name', 'price'])
             ->paginate();
 
